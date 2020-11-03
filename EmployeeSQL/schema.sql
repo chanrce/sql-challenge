@@ -9,6 +9,7 @@ DROP TABLE IF EXISTS title;
 -- Exported from QuickDBD: https://www.quickdatabasediagrams.com/
 -- NOTE! If you have used non-SQL datatypes in your design, you will have to change these here.
 
+
 CREATE TABLE "departments" (
     "dept_no" VARCHAR   NOT NULL,
     "dept_name" VARCHAR   NOT NULL,
@@ -53,7 +54,8 @@ CREATE TABLE "titles" (
      )
 );
 
---Import CSV files for each table, then altering tables
+
+--Altering tables:
 
 ALTER TABLE "dept_emp" ADD CONSTRAINT "fk_dept_emp_emp_no" FOREIGN KEY("emp_no")
 REFERENCES "employees" ("emp_no");
