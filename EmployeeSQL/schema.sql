@@ -182,3 +182,10 @@ SELECT * FROM employees;
 SELECT * FROM salaries;
 SELECT * FROM titles;
 
+	SELECT last_name, COUNT(last_name) AS Frequency
+	FROM employees
+	GROUP BY last_name
+	ORDER BY 
+	COUNT (last_name) DESC;
+	
+	
