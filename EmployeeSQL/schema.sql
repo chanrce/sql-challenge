@@ -174,14 +174,6 @@ SELECT * FROM titles;
 	
 -- In descending order, list the frequency count of employee last names, i.e., how many employees share each last name.
 
---Viewing the tables:
-SELECT * FROM departments;
-SELECT * FROM dept_emp;
-SELECT * FROM dept_manager;
-SELECT * FROM employees;
-SELECT * FROM salaries;
-SELECT * FROM titles;
-
 	SELECT last_name, COUNT(last_name) AS Frequency
 	FROM employees
 	GROUP BY last_name
